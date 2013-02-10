@@ -1,6 +1,6 @@
 /*
  *  TV Input - Linux analogue (v4lv2) interface
- *  Copyright (C) 2007 Andreas Öman
+ *  Copyright (C) 2007 Andreas ï¿½man
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -176,7 +176,7 @@ v4l_service_start(service_t *t, unsigned int weight, int force_start)
   int frequency = t->s_v4l_frequency;
   struct v4l2_frequency vf;
   int result;
-  v4l2_std_id std = 0xff;
+  v4l2_std_id std = V4L2_STD_NTSC;
   int fd;
 
   if(va->va_current_service != NULL)
